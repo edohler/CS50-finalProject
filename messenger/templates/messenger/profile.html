@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{% block title %}Messenger{% endblock %}</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="{% static 	'messenger/style.css' %}">
+		<script src="{% static 'messenger/profile.js' %}"></script>
+		{% block script %}
+		{% endblock %}
+
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark indigo">
+		  <div class="collapse navbar-collapse">
+		    <div class="navbar-header">
+		      <p class="navbar-brand" id="navbar-title">My Messenger</p>
+		    </div>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="{% url 'home' %}">Chats</a></li>
+		      <li><a href="{% url 'logout' %}"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+		    </ul>
+		  </div>
+		</nav> 
+		<div class="main-div">
+			<div class="picture-container-div">
+				<div class="picture-div">
+					{% if user.profile.picture %}
+						<img src="{{ user.profile.picture }}" class="profile-picture">
+					{% else %}
+						<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="profile-picture">
+					{% endif %}
+				</div>
+				<form id="picture-form">
+					<div class="picture-input-div">
+						<input type="text" placeholder="Add URL for new picture" id="new-picture">
+					</div>
+				</form>
+			</div>
+			<div class="information-div">
+				<div class="information-name-div">
+					<h1 id="profile-name">{{ user.username }}</h1>	
+				</div>
+				<div class="information-rest-div">
+					<p>{{ user.email }}</p>
+					<p>number of contacts: {{ noc }}</p>
+				</div>
+			</div>
+		</div>
+
+	</body>

@@ -1,0 +1,452 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #26004d;
+	color: white;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 100px;
+}
+
+a {
+	font-size: 18px;
+	color: white;	
+}
+
+p {
+	font-size: 16px;
+}
+
+
+/*---Login-page ---*/
+
+#center-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#title-div{
+	margin: 20px;
+}
+
+#login-div {
+	margin: 20px;
+	border: 2px solid white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px white;
+	padding: 20px;
+}
+
+/*------Home-page---------*/
+
+.navigation-bar {
+	border-bottom: 1px solid white;
+	box-shadow: 0px 0px 10px white;
+	margin-bottom: 0px;
+}
+
+#navbar-title {
+	font-size: 30px;
+}
+
+.alternative-navbar {
+	display: inline-block;
+	text-align: right;
+}
+
+/* ---left-side-------------------------------------*/
+
+.left-bar {
+	width: 20%;
+	height: 90%;
+	padding: 10px;
+	float: left;
+	position: relative;
+}
+
+.left-bar:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    border-right: 1px solid #cfc7c0;
+    top: 0px;
+    bottom: -20px;
+}
+
+.top-bar {
+	height: 120px;
+	padding-top: 10px;
+}
+
+.top-bar-title-div {
+	height: 50px;
+}
+#top-bar-title {
+	font-size: 24px;
+}
+
+.top-bar-new-div {
+	height: 30px;
+	background-color: grey;
+	border: 0px;
+	border-radius: 15px;
+	width: 100%;
+}
+
+.search-bar-div {
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	height: 100%;
+	width: 90%;
+}
+
+#search-bar {
+	background-color: grey;
+	border: none;
+	width: 100%;
+}
+
+/* -----left-side-listing ---------------------------*/
+
+.listing-container {
+	display: block;
+	position: relative;
+	height: calc(100% - 130px);
+}
+
+.listing-div {
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+	max-height: 100%;
+}
+
+.user-listing-div {
+	position: absolute;
+	width: 100%;
+	overflow: auto;
+	max-height: 95%;	
+}
+
+.contact-div {
+	height: 40px;
+	padding: 10px;
+	padding-top: 0px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.user-div {
+	height: 40px;
+	width: 100%;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+
+.user-div:hover {
+	background-color: #5900b3;
+}
+
+.icon-div {
+	padding: 10px;
+	height: 100%;
+	width: 30px;
+	display: inline-block;
+}
+
+.name-div {
+	padding: 10px;
+	height: 100%;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.big-user-div {
+	padding-top: 10px;
+	padding-left: 5px;
+	border-radius: 5px; 
+	margin: 10px;
+	height: 80px;
+	width: 95%;
+	margin-left: 5px;
+	margin-right: 10px;
+}
+
+.big-user-div:hover {
+	background-color: #5900b3;
+}
+#active {
+	background-color: #700BD2;	
+}
+.big-icon-div {
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	border: 2px solid silver;
+	border-radius: 30px;
+	box-sizing: border-box;
+	vertical-align: top;
+	font-size: 30px;
+	text-align: center;
+	overflow: hidden;
+}
+.glyphicon-user {
+	vertical-align: middle;
+}
+
+#contact-picture-wide {
+	width: auto;
+	height: 60px;
+}
+
+#contact-picture-long {
+	height: auto;
+	width: 60px;
+}
+
+.big-info-div {
+	padding: 5px;
+	padding-left: 3%;
+	height: 70px;
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.big-name-div {
+	height: 50%;
+	font-size: 22px;
+	padding-bottom: 2px;
+	width: 100%;
+}
+.big-text-div {
+	height: 40%;
+	font-size: 14px;
+	width: 100%;
+	overflow: hidden;
+}
+.big-date-div {
+	padding: 10px;
+	width: 25%;
+	height: 70px;
+	display: inline-block;
+	font-size: 14px;
+	text-align: right;
+	word-break: normal;
+	vertical-align: bottom;
+}
+
+
+
+
+/*------right-side----------------------------------------*/
+
+.main-screen {
+	padding: 10px;
+	height: 90%;
+	margin-left: 20%;
+}
+
+.top-chat-div {
+	height: 60px;
+	width: 100%;
+	position: relative;
+	padding: 10px;
+	padding-left: 30px;
+	font-size: 26px;
+}
+
+.top-chat-div:after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid grey;
+    bottom: 0px;
+    left: -10px;
+    right: -10px;
+}
+
+.chat-container {
+	width: 100%;
+	height: calc(100% - 120px);
+	display: block;
+	vertical-align: bottom;
+	position: relative;
+}
+
+.chat-div {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	overflow: auto;
+	max-height: calc(100% - 120px);
+	padding-right: 10px;
+}
+
+.chat-date-div {
+	width: 140px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: ghostwhite;
+}
+
+.chat-text-div {
+	width: 100%;
+	overflow: auto;
+}
+
+.chat-text-recipient-div {
+	margin-bottom: 4px;
+	font-size: 20px;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	flex-direction:column;
+	align-items: flex-start;
+	border-radius: 15px;
+	background-color: silver;
+	color: black;
+	max-width: 1000px;
+}
+
+.chat-text-sender-div {
+	margin-bottom: 4px;
+	font-size: 20px;
+	float: right;
+	padding-left: 10px;
+	padding-right: 10px;
+	flex-direction:column;
+	align-items: flex-start;
+	border-radius: 15px;
+	background-color: #8B008B;
+	max-width: 1000px;
+}
+
+
+
+.text-div {
+	bottom: 0;
+	height: 60px;
+	width: 100%;
+	display: block;
+}
+
+.text-field-div {
+	height: 40px;
+	margin-left: 30px;
+	display: inline-block;
+	background-color: grey;
+	border: 0px;
+	border-radius: 20px; 
+	width: calc(100% - 150px);
+	display: inline-block;
+}
+
+#new-message {
+	margin-left: 5%;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 90%;
+	font-size: 20px;
+	background-color: grey;
+	border: none;
+	overflow: visible;
+	word-wrap: break-word;
+}
+
+#new-message:focus {
+	outline: none;
+}
+
+.send-div {
+	width: 40px;
+	display: inline-block;
+}
+
+.glyphicon.glyphicon-send {
+    font-size: 30px;
+}
+
+/* -----------------------------------------------*/
+
+/* ------ Profile --------------------------------*/
+
+.main-div {
+	width: 100%;
+	padding: 50px;
+	position: absolute;
+}
+
+.picture-container-div {
+	width: 250px;
+	height: 300px;
+	float: left; 
+}
+
+.picture-div {
+	width: 100%;
+	height: 250px;
+	text-align: center;
+}
+
+.picture-input-div {
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+}
+
+#new-picture {
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+	border: 2px solid grey;
+	border-radius: 5px;
+}
+
+#picture-wide {
+	width: 250px;
+	height: auto;
+}
+
+#picture-long {
+	width: auto;
+	height: 250px;
+}
+
+.information-div {
+	width: calc(100% - 300px);;
+	height: 250px;
+	margin-left: 300px;
+	position: relative;
+	top: 0;
+}
+
+.information-name-div {
+	max-width: 200px;
+	min-width: 150px;
+	height: 250px;
+	display: inline-block;
+}
+
+.information-rest-div {
+	max-width: 300%;
+	height: 250px;
+	display: inline-block;
+}
+
+#profile-name {
+	font-size: 50px;
+}

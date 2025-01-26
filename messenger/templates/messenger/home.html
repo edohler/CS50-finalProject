@@ -1,0 +1,42 @@
+{% extends "messenger/layout.html" %}
+{% load static %}
+
+{% block body %}
+	<div class="left-bar">
+		<div class="top-bar">
+			<div class="top-bar-title-div">
+				<p id="top-bar-title">Chat</p>
+			</div>
+			<div class="top-bar-new-div">
+				<div class="search-bar-div">
+					<input type="text" placeholder="Search User" id="search-bar">
+				</div>
+			</div>
+		</div>
+		<div class="listing-container">
+			<div class="listing-div"></div>
+			<div class="user-listing-div"></div>
+		</div>
+	</div>
+	<div class="main-screen">
+		<div class="top-chat-div">
+			
+		</div>
+		<div class="chat-container">
+			<div class="chat-div">
+			
+			</div>
+		</div>
+		<div class="text-div">
+			<form id="new-message-form">
+				<div class="text-field-div">
+					<input type="text" placeholder="Type a message" id="new-message">
+				</div>
+				<div class="send-div">
+					<button type="submit" class="btn btn-link" id="send-button"><span class="glyphicon glyphicon-send"></span></button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+{% endblock %}
